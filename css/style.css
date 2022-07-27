@@ -1,0 +1,97 @@
+/* custom properties */
+:root{
+  /* --first-color: #394F8A; */
+  --first-color: #051622;
+  --first-alpha-color: rgba(57, 79, 138, 0.75);
+  --second-color: #1BA098;
+  --second-alpha-color: rgba(27, 160, 151, 0.75);
+  --link-color:#DEB992;
+  --link-alpha-color:rgba(222, 185, 146, 0.75);
+  --gray--light-color: #f3f3f3;
+  --gray-color: #ccc;
+  --gray-dark-color: #666;
+  --black-color: #000;
+  --text-color: #222;
+  --font:"PT Serif", sans-serif;
+}
+
+/* ***** RESET ***** */
+
+/* modelo de caja desde el borde ancho y altura */
+html{
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* herede el modelo de caja del nodo principal html */
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  transition: .3s ease-in-out;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-alpha-color);
+}
+
+h1{
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2{
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3{
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4{
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5{
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6{
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+p{
+  line-height: 1.6rem;
+}
+
+section{
+  height: 100vh;
+}
+
+/* ****** utilties ***** */
+.box-shadow-1{
+  box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.25);
+}
