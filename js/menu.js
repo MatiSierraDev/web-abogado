@@ -28,7 +28,8 @@ const $ = (selector) => document.querySelector(`${selector}`);
     $menu.classList.toggle('is-active')
   });
 
-  //Delegacion de eventos
+  //Delegacion de eventos para optimizar los click de los enlaces === a
+  //delego el evento al elemto padre superior o al nodo raiz (el document) y apartir de ahi busco el selector que coincida(!e.target.matches('.menu a')) para descadenar la programacion
   d.addEventListener("click", (e) => {
     //sino coincide con la clase .menu a que retorne falso
     if (!e.target.matches('.menu a')) return false
@@ -40,6 +41,6 @@ const $ = (selector) => document.querySelector(`${selector}`);
     $hamburgerToggleOpen.classList.add('none')
     $menu.classList.toggle('is-active')
 
-  })
+  });
 
 })(document, $);
