@@ -13,6 +13,12 @@ const $ = (selector) => document.querySelector(`${selector}`);
 //funcion autoejecutable para evitar colisiones
 //MENU
 
+/**
+ * funcion autoejecutable que maneja el menu
+ * @params{string} nodo raiz document
+ * @params{string} funcion que recibe un selector
+ */
+
 ((d, $) => {
   console.log('Fucion autoejecutable')
 

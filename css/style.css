@@ -177,3 +177,24 @@ p{
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+@media screen and (min-width: 992px) {
+  body {
+    background-color: blue;
+  }
+  .header{
+    top:0;
+  }
+  .menu-btn{
+    display: none;
+  }
+  .menu{
+    position: relative;
+    opacity: 1;
+    top: 0;
+    display: block;
+    bottom: auto;
+    width: auto;
+    pointer-events: auto;
+  }
+}
