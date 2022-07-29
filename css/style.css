@@ -92,13 +92,10 @@ p{
 
 /* ***** Components ***** */
 /* Hero image */
-article.hero-image{
-  background-repeat: no-repeat;
+.hero-image{
   background-image: var(--image);
-  /* background-image: url('./img/hero-img.jpg'); */
-  height:auto;
+  background-repeat: no-repeat;
 }
-
 
 /* menu */
 .menu-btn {
