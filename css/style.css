@@ -117,8 +117,8 @@ p{
   align-items: center;
   text-align: center;
   color: var(--gray-light-color);
-  position: relative;
-  bottom: 10rem;
+  /* position: relative;
+  bottom: 10rem; */
 }
 
 .hero-image-title{
