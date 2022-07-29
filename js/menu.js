@@ -20,8 +20,6 @@ const $ = (selector) => document.querySelector(`${selector}`);
  */
 
 ((d, $) => {
-  console.log('Fucion autoejecutable')
-
   let $menu = $('.menu');
   let $menuBtn = $('.menu-btn');
 
@@ -47,6 +45,9 @@ const $ = (selector) => document.querySelector(`${selector}`);
     $hamburgerToggleOpen.classList.add('none')
     $menu.classList.toggle('is-active')
 
+    //Navlink active cuando se selcciona
+    d.querySelector('a.active-link').classList.remove('active-link')
+    e.target.classList.add('active-link')
   });
 
 })(document, $);

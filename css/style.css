@@ -112,7 +112,7 @@ p{
   background-color: var(--first-color);
   width: 100%;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease;
   pointer-events: none;
 }
 
@@ -126,13 +126,57 @@ p{
   font-weight: bold;
   padding: 1rem;
   text-align: center;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
   color: var(--second-color);
+}
+
+.menu a:last-child{
+  padding-right: 0;
 }
 
 .menu a:hover {
   background-color: var(--second-color);
   color: var(--first-color);
+}
+
+a.active-link {
+  background-color: none;
+  text-decoration: underline wavy var(--second-color) 0.10rem;
+  text-underline-offset: 0.15rem;
+  color: var(--gray-light-color);
+}
+
+@media screen and (min-width: 1024px){
+  .menu-btn{
+    display: none;
+  }
+
+  .menu{
+    opacity: 1;
+    width: auto;
+    flex-direction: row;
+    position: static;
+    pointer-events: auto;
+  }
+
+  .menu a{
+    padding: 0 1rem;
+    font-size: 1.25rem;
+  }
+
+  .menu a:hover{
+    background-color: transparent;
+    text-decoration: underline wavy var(--second-color) 0.10rem;
+    text-underline-offset: 0.15rem;
+    color: var(--gray-light-color);
+  }
+
+  a.active-link {
+    background-color: none;
+    text-decoration: underline wavy var(--second-color) 0.10rem;
+    text-underline-offset: 0.15rem;
+    color: var(--gray-light-color);
+  }
 }
 
 /* ****** utilties ***** */
@@ -170,6 +214,7 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 .logo a {
@@ -178,17 +223,27 @@ p{
   font-weight: bold;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
   body {
-    background-color: blue;
+    background-color: var(--first-alpha-color);
   }
+
   .header{
     top:0;
+    position: sticky;
+    padding: 0.5rem;
+    height: calc(var(--header-height) - 0.5rem);
   }
-  .menu-btn{
+  
+  /* .menu-btn{
     display: none;
   }
-  .menu{
+   */
+  /* .menu{
     position: relative;
     opacity: 1;
     top: 0;
@@ -196,5 +251,5 @@ p{
     bottom: auto;
     width: auto;
     pointer-events: auto;
-  }
+  } */
 }
