@@ -130,10 +130,6 @@ p{
   color: var(--second-color);
 }
 
-.menu a:last-child{
-  padding-right: 0;
-}
-
 .menu a:hover {
   background-color: var(--second-color);
   color: var(--first-color);
@@ -162,6 +158,10 @@ a.active-link {
   .menu a{
     padding: 0 1rem;
     font-size: 1.25rem;
+  }
+
+  .menu a:last-child {
+    padding-right: 0;
   }
 
   .menu a:hover{
