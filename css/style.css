@@ -95,6 +95,40 @@ p{
 .hero-image{
   background-image: var(--image);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: var(--attachment);
+  background-position: 65%;
+}
+
+.hero-image-opacity{
+  background-color: var(--first-alpha-color);
+  width: 100%;
+  min-height: 110vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero-image-content{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--gray-light-color);
+  position: relative;
+  bottom: 10rem;
+}
+
+.hero-image-title{
+  font-size: calc(2rem + 2vw);
+  font-weight: bold;
+}
+
+.hero-image-subtitle{
+  color: var(--second-alpha-color);
+  font-size:calc(1rem + 1vw);
 }
 
 /* menu */
