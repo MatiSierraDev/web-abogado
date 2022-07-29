@@ -97,7 +97,7 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: var(--attachment);
-  background-position: 65%;
+  background-position: center;
 }
 
 .hero-image-opacity{
