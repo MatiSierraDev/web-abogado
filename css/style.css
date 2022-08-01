@@ -182,6 +182,17 @@ a.active-link {
   color: var(--gray-light-color);
 }
 
+/* nosotros */
+
+.about{
+  background-color: #eff7ff;
+}
+
+.container-about p {
+  font-size: calc(1.2rem + 0.25vw);
+  line-height: calc(1.75rem + 0.75vw);
+}
+
 @media screen and (min-width: 1024px){
   .menu-btn{
     display: none;
@@ -249,7 +260,18 @@ a.active-link {
   display:flex;
 }
 
+.section{
+  padding: 2rem 1rem;
+}
+
 /* ***** site styles ***** */
+.about{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
 .header{
   position: fixed;
   left: 0;
@@ -280,11 +302,20 @@ a.active-link {
 
 @media screen and (min-width: 1024px) {
 
+  .full-lg-screen{
+    width: 100%;
+    min-height: 100vh;
+  }
+
   .header{
     top:0;
     position: sticky;
     padding: 0.5rem;
     height: calc(var(--header-height) - 0.5rem);
+  }
+
+  .container-about {
+    width: 780px;
   }
   
   /* .menu-btn{
