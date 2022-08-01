@@ -185,11 +185,11 @@ a.active-link {
 /* nosotros */
 
 .about{
-  background-color: #eff7ff;
+  background-color: #fcfeff;
 }
 
 .container-about p {
-  font-size: calc(1.2rem + 0.25vw);
+  font-size: calc(1rem + 0.25vw);
   line-height: calc(1.75rem + 0.75vw);
 }
 
