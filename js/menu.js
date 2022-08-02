@@ -51,3 +51,29 @@ const $ = (selector) => document.querySelector(`${selector}`);
   });
 
 })(document, $);
+
+((d, $) => {
+
+  const observer = new IntersectionObserver(handleInterceptionObserver, {
+    threshold: 0.10
+  });
+
+  const $scrollTrackerElement = d.getElementById('nosotros');
+  observer.observe($scrollTrackerElement);
+
+  function handleInterceptionObserver(entries) {
+    entries.forEach(entry => {
+      const $socialIcons = d.querySelector('.social');
+
+      if (entry.intersectionRatio > 0) {
+        $socialIcons.firstElementChild.classList.remove('none');
+        $socialIcons.firstElementChild.classList.add('social-contact');
+      } else {
+        $socialIcons.firstElementChild.classList.remove('social-contact');
+        $socialIcons.firstElementChild.classList.add('none');
+      }
+    });
+  }
+
+
+})(document, $)
